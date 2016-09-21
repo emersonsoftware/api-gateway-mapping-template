@@ -56,14 +56,14 @@ module.exports = function(parameters) {
       },
       params: function(x) {
         switch (true) {
-        case x === undefined:
-          return params;
-        case x in params.path:
-          return params.path[x];
-        case x in params.querystring:
-          return params.querystring[x];
-        case x in params.header:
-          return params.header[x];
+          case x === undefined:
+            return params;
+          case x in params.path:
+            return params.path[x];
+          case x in params.querystring:
+            return params.querystring[x];
+          case x in params.header:
+            return params.header[x];
         }
       },
     },
