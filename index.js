@@ -64,6 +64,8 @@ module.exports = function(parameters) {
             return params.querystring[x];
           case x in params.header:
             return params.header[x];
+          default:
+            return "";
         }
       },
     },
