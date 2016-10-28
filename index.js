@@ -22,6 +22,7 @@ module.exports = function(parameters) {
     context: context,
     input: {
       _payload: payload.toString(),
+      body: payload.toString(),
       path: function(path) {
         var obj;
         if (this._payload === '') {
